@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/addCommission.css">
+    <title>GENEWORK - Add Commission</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p class="name"><a href="menu.html">GENEWORK</a></p>
+            <ul>
+                <li><a href="menu.html">Home</a></li>
+                <li><a href="jobsOption.html">Jobs</a></li>
+                <li><a href="commissionsOption.html">Commission</a></li>
+                <li><a href="index.html">Sign Out</a></li>
+                <li><a href="account.html"><img src="./public/images/profile.png" alt="Profile Picture" width="50"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Add Commission</h1>
+                <form action="">
+                    <div id="errorMessage"></div>
+                    <div class="form-control">
+                        <label for="commissionerName">Commissioner Name <span>*</span></label><br/>
+                        <input type="text" id="commissionerName" name="commissionerName" placeholder="Commissioner Name">
+                    </div>
+                    <div class="form-control">
+                        <label for="commissionerDetails">Commissioner Details <span>*</span></label><br/>
+                        <textarea type="text" id="commissionerDetails" name="commissionerDetails" placeholder="Commissioner Details" rows="10"></textarea>
+                    </div>
+                    <button type="button" id="add" aria-label="create">Add new commissioner</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>Main Menu</p>
+        <p><a href="creator.html">Learn more</a></p>
+    </footer>
+
+    <script src="./public/js/addCommission.js"></script>
+</body>
+</html>

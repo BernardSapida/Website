@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/register.css">
+    <title>GENEWORK - Account Register</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p class="name">GENEWORK</p>
+            <ul>
+                <li><a href="index.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h1>Sign Up</h1>
+                <div id="errorMessage"></div>
+                <form action="">
+                    <div class="form-control">
+                        <label for="fullname">Full Name <span>*</span></label><br/>
+                        <input type="text" id="fullname" name="fullname" placeholder="Fullname">
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email Address <span>*</span></label><br/>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-control">
+                        <label for="description">CV Style / Description <span>*</span></label><br/>
+                        <textarea type="number" id="description" name="description" rows="10" placeholder="CV Style / Description"></textarea>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password <span>*</span></label><br/>
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                    <input type="checkbox" id="terms" aria-label="terms"> 
+                    <label for="terms">I have read and agree with the <a href="">Terms & Conditions</a></label>
+                    <button type="button" id="create" aria-label="create">Create Account</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./public/js/register.js"></script>
+</body>
+</html>

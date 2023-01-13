@@ -1,0 +1,111 @@
+:root {
+  --YellowGreenCrayola: #D0DB97;
+  --MediumSeaGreen: #69B578;
+  --FernGreen: #3A7D44;
+  --BritishRacingGreen: #254D32;
+  --RaisinBlack: #181D27;
+  --RaisinBlackSecondary: #323949;
+  --SecondaryText: #ffffff9a;
+  --white: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body header {
+  padding: 15px 30px;
+  background-color: var(--BritishRacingGreen);
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav p.name a {
+  font-weight: bolder;
+  color: var(--white);
+  text-decoration: none;
+}
+body header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 25px;
+  font-size: 16px;
+}
+body header nav ul li a {
+  color: var(--SecondaryText);
+  transition: all 320ms linear;
+  cursor: pointer;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  color: var(--white);
+}
+body main section div.head {
+  margin: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+body main section div.head button {
+  margin: 10px 0;
+  padding: 10px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+}
+body main section div.head button#btn-add {
+  background-color: var(--RaisinBlack);
+  transition: all 350ms ease;
+}
+body main section div.head button#btn-add:hover {
+  background-color: var(--RaisinBlackSecondary);
+}
+body main section div.container {
+  margin: 20px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+body main section div.container div.commission_entry {
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgb(200, 200, 200);
+  border-radius: 5px;
+  width: 250px;
+}
+body main section div.container div.commission_entry div.commission_info {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body main section div.container div.commission_entry div.commission_info p {
+  margin: 0;
+}
+body main section div.container div.commission_entry p, body main section div.container div.commission_entry hr {
+  margin-bottom: 10px;
+}
+body main section div.container div.commission_entry hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: var(--RaisinBlackSecondary);
+}
+body main section div.container div.commission_entry a {
+  display: block;
+  text-align: right;
+}
+body footer {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=commissionsOption.css.map */

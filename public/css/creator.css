@@ -1,0 +1,87 @@
+:root {
+  --YellowGreenCrayola: #D0DB97;
+  --MediumSeaGreen: #69B578;
+  --FernGreen: #3A7D44;
+  --BritishRacingGreen: #254D32;
+  --RaisinBlack: #181D27;
+  --RaisinBlackSecondary: #323949;
+  --SecondaryText: #ffffff9a;
+  --white: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body header {
+  padding: 15px 30px;
+  background-color: var(--BritishRacingGreen);
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav p.name a {
+  font-weight: bolder;
+  color: var(--white);
+  text-decoration: none;
+}
+body header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 25px;
+  font-size: 16px;
+}
+body header nav ul li a {
+  color: var(--SecondaryText);
+  transition: all 320ms linear;
+  cursor: pointer;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  color: var(--white);
+}
+body main section {
+  margin: 50px;
+}
+body main section p.centered-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--RaisinBlack);
+}
+body main section hr {
+  margin: 15px 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--RaisinBlackSecondary);
+  border: none;
+}
+body main section h1 {
+  margin-bottom: 10px;
+  color: var(--RaisinBlackSecondary);
+}
+body main section p.title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--RaisinBlackSecondary);
+}
+body main section div.container_developers {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body footer {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=creator.css.map */

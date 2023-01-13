@@ -1,0 +1,111 @@
+:root {
+  --YellowGreenCrayola: #D0DB97;
+  --MediumSeaGreen: #69B578;
+  --FernGreen: #3A7D44;
+  --BritishRacingGreen: #254D32;
+  --RaisinBlack: #1c2029;
+  --RaisinBlackSecondary: #323949;
+  --SecondaryText: #ffffff9a;
+  --white: #FFFFFF;
+  --crimson: #dc143c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body header {
+  padding: 32px 30px;
+  background-color: var(--BritishRacingGreen);
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav p.name {
+  font-weight: bolder;
+  color: var(--white);
+}
+body header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 25px;
+  font-size: 16px;
+}
+body header nav ul li a {
+  color: var(--SecondaryText);
+  transition: all 320ms linear;
+  cursor: pointer;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  color: var(--white);
+}
+body main section {
+  margin: 50px;
+  display: flex;
+  gap: 50px;
+}
+body main section article, body main section > div {
+  width: 50%;
+}
+body main section article h1 {
+  margin-bottom: 15px;
+  font-size: 34px;
+  text-align: center;
+}
+body main section > div {
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgb(200, 200, 200);
+  border-radius: 5px;
+}
+body main section > div div#errorMessage p {
+  padding: 10px;
+  background-color: #dc143c;
+  color: var(--white);
+  border-radius: 5px;
+}
+body main section > div form div.form-control {
+  margin: 5px 0;
+}
+body main section > div form div.form-control label {
+  font-size: 14px;
+}
+body main section > div form div.form-control label span {
+  color: var(--crimson);
+}
+body main section > div form div.form-control input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(150, 150, 150);
+}
+body main section > div form button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+}
+body main section > div form button#signin {
+  background-color: var(--FernGreen);
+  transition: all 350ms ease;
+}
+body main section > div form button#signin:hover {
+  background-color: var(--MediumSeaGreen);
+}
+body main section > div form button#signup {
+  background-color: var(--RaisinBlack);
+  transition: all 350ms ease;
+}
+body main section > div form button#signup:hover {
+  background-color: var(--RaisinBlackSecondary);
+}/*# sourceMappingURL=index.css.map */

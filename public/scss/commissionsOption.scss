@@ -1,0 +1,135 @@
+:root {
+    --YellowGreenCrayola: #D0DB97;
+    --MediumSeaGreen: #69B578;
+    --FernGreen: #3A7D44;
+    --BritishRacingGreen: #254D32;
+    --RaisinBlack: #181D27;
+    --RaisinBlackSecondary: #323949;
+    --SecondaryText: #ffffff9a;
+    --white: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    & header {
+        padding: 15px 30px;
+        background-color: var(--BritishRacingGreen);
+
+        
+        & nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & p.name a {
+                font-weight: bolder;
+                color: var(--white);
+                text-decoration: none;
+            }
+
+            & ul {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                gap: 25px;
+                font-size: 16px;
+                
+                & li a {
+                    color: var(--SecondaryText);
+                    transition: all 320ms linear;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+
+    & main {
+        & section {
+            & div.head {
+                margin: 10px 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 50px;
+
+                & button {
+                    margin: 10px 0;
+                    padding: 10px;
+                    display: block;
+                    border: none;
+                    border-radius: 5px;
+                    color: var(--white);
+                    cursor: pointer;
+
+                    &#btn-add {
+                        background-color: var(--RaisinBlack);
+                        transition: all 350ms ease;
+
+                        &:hover {
+                            background-color: var(--RaisinBlackSecondary);
+                        }
+                    }
+                }
+            }
+
+            & div.container {
+                margin: 20px 50px;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                & div.commission_entry {
+                    padding: 20px;
+                    box-shadow: 0px 0px 10px rgb(200, 200, 200);
+                    border-radius: 5px;
+                    width: 250px;
+
+                    & div.commission_info {
+                        margin-bottom: 10px;
+                        display: flex;
+                        align-items: center; 
+                        gap: 10px;
+
+                        & p {
+                            margin: 0;
+                        }
+                    }
+
+                    & p, & hr {
+                        margin-bottom: 10px;
+                    }
+
+                    & hr {
+                        border: none;
+                        height: 1px;
+                        width: 100%;
+                        background-color: var(--RaisinBlackSecondary);
+                    }
+
+                    & a {
+                        display: block;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+
+    & footer {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

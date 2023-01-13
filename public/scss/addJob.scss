@@ -1,0 +1,135 @@
+:root {
+    --YellowGreenCrayola: #D0DB97;
+    --MediumSeaGreen: #69B578;
+    --FernGreen: #3A7D44;
+    --BritishRacingGreen: #254D32;
+    --RaisinBlack: #1c2029;
+    --RaisinBlackSecondary: #323949;
+    --SecondaryText: #ffffff9a;
+    --white: #FFFFFF;
+    --crimson: #dc143c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    & header {
+        padding: 15px 30px;
+        background-color: var(--BritishRacingGreen);
+
+        
+        & nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & p.name a {
+                font-weight: bolder;
+                color: var(--white);
+                text-decoration: none;
+            }
+
+            & ul {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                gap: 25px;
+                font-size: 16px;
+                
+                & li a {
+                    color: var(--SecondaryText);
+                    transition: all 320ms linear;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+
+    & main {
+        & section {
+            margin: 50px;
+            display: flex;
+
+            & > div {
+                padding: 30px;
+                box-shadow: 0px 0px 10px rgb(200, 200, 200);
+                border-radius: 5px;
+                width: 100%;
+
+                & h1 {
+                    margin-bottom: 15px;
+                    font-size: 34px;
+                    text-align: center;
+                }
+
+                & form {
+                    & div#errorMessage p {
+                        padding: 10px;
+                        background-color: #dc143c;
+                        color: var(--white);
+                        border-radius: 5px;
+                    }
+                    
+                    & div.form-control {
+                        margin: 5px 0;
+
+                        & label {
+                            font-size: 14px;
+
+                            & span {
+                                color: var(--crimson);
+                            }
+                        }
+
+                        & input, & textarea {
+                            padding: 10px;
+                            width: 100%;
+                            border-radius: 5px;
+                            border: 1px solid rgb(150, 150, 150);
+                        }
+
+                        & textarea {
+                            width: 100%;
+                        }
+                    }
+
+                    & button {
+                        margin: 10px 0;
+                        padding: 10px;
+                        width: 100%;
+                        display: block;
+                        border: none;
+                        border-radius: 5px;
+                        color: var(--white);
+                        cursor: pointer;
+
+                        &#add {
+                            background-color: var(--RaisinBlack);
+                            transition: all 350ms ease;
+
+                            &:hover {
+                                background-color: var(--RaisinBlackSecondary);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & footer {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

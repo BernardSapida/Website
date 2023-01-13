@@ -1,0 +1,97 @@
+:root {
+  --YellowGreenCrayola: #D0DB97;
+  --MediumSeaGreen: #69B578;
+  --FernGreen: #3A7D44;
+  --BritishRacingGreen: #254D32;
+  --RaisinBlack: #181D27;
+  --RaisinBlackSecondary: #323949;
+  --SecondaryText: #ffffff9a;
+  --white: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body header {
+  padding: 15px 30px;
+  background-color: var(--BritishRacingGreen);
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav p.name a {
+  font-weight: bolder;
+  color: var(--white);
+  text-decoration: none;
+}
+body header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 25px;
+  font-size: 16px;
+}
+body header nav ul li a {
+  color: var(--SecondaryText);
+  transition: all 320ms linear;
+  cursor: pointer;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  color: var(--white);
+}
+body main section {
+  margin: 50px;
+}
+body main section p.title {
+  margin-bottom: 10px;
+}
+body main section article {
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgb(200, 200, 200);
+  border-radius: 5px;
+}
+body main section article div {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body main section article hr {
+  margin-bottom: 15px;
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: var(--RaisinBlackSecondary);
+}
+body main section article textarea {
+  width: 100%;
+}
+body main section article button {
+  margin: 10px 0;
+  margin-left: auto;
+  padding: 10px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+}
+body main section article button#save {
+  background-color: var(--RaisinBlack);
+  transition: all 350ms ease;
+}
+body main section article button#save:hover {
+  background-color: var(--RaisinBlackSecondary);
+}
+body footer {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=account.css.map */
